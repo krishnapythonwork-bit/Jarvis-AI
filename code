@@ -1,0 +1,22 @@
+print("===== MINI JARVIS =====")
+
+while True:
+    user = input("You: ").lower()
+
+    if "hello" in user:
+        print("JARVIS: Hello Boss!")
+
+    elif "name" in user:
+        print("JARVIS: My name is Mini Jarvis.")
+
+    elif "time" in user:
+        from datetime import datetime
+        now = datetime.now().strftime("%H:%M:%S")
+        print("JARVIS: Current time is", now)
+
+    elif "bye" in user:
+        print("JARVIS: Goodbye Boss!")
+        break
+
+    else:
+        print("JARVIS: Sorry, I don't understand.")
